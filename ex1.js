@@ -32,14 +32,14 @@ function xmlToJSObj(xmlStr) {
 
         let obj = {
             name: firstName + ' ' + secondName,
-            age: parseInt(student.querySelector("age").textContent),
+            age: Number(student.querySelector("age").textContent),
             prof: student.querySelector("prof").textContent,
             lang: nameTag.getAttribute("lang")
         }
 
         list.push(obj)
     })
-    return list
+    return {list}
 }
 
-console.log(xmlToJSObj(xmlString))
+// console.dir(xmlToJSObj(xmlString))
