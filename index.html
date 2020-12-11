@@ -2,11 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Модуль 14</title>
     <script src="./ex1.js"></script>
-    <script src="./ex2.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+<nav class="menu">
+    <a class="active" href="index.html">Задание 1</a>
+    <a href="templates/exercise2.html">Задание 2</a>
+    <a href="templates/exercise3.html">Задание 3</a>
+    <a href="templates/exercise4.html">Задание 4</a>
+    <a href="templates/exercise5.html">Задание 5</a>
+</nav>
+
+<h4 class="title">Задание 1</h4>
+<p class="exercise_text">Вам дана заготовка и результат, который вы должны получить. Ваша задача — написать код,
+    который будет преобразовывать XML в JS-объект и выводить его в консоль.</p>
+
+<br>
+<pre class="code">
+    &lt;list>
+      &lt;student&gt;
+        &lt;name lang="en"&gt;
+          &lt;first&gt;Ivan&lt;/first&gt;
+          &lt;second&gt;Ivanov&lt;/second&gt;
+          &lt;/name&gt;
+          &lt;age&gt;35&lt;/age&gt;
+          &lt;prof&gt;teacher&lt;/prof&gt;
+      &lt;/student&gt;
+      &lt;student&gt;
+        &lt;name lang="ru"&gt;
+          &lt;first&gt;Петр&lt;/first&gt;
+          &lt;second&gt;Петров&lt;/second&gt;
+        &lt;/name&gt;
+        &lt;age&gt;58&lt;/age&gt;
+        &lt;prof&gt;driver&lt;/prof&gt;
+      &lt;/student&gt;
+    &lt;/list&gt;
+</pre>
+
+
+<div class="wrap_ex">
+    <button id="button" class="button">Получить JS объект</button>
+</div>
+<div id="result" class="result"></div>
 
 </body>
 </html>

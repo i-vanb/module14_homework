@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Модуль 14</title>
+    <script src="../ex5.js"></script>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="menu">
+    <a href="../index.html">Задание 1</a>
+    <a href="./exercise2.html">Задание 2</a>
+    <a href="./exercise3.html">Задание 3</a>
+    <a href="./exercise4.html">Задание 4</a>
+    <a class="active" href="./exercise5.html">Задание 5</a>
+</nav>
+
+
+<h4 class="title">Задание 5</h4>
+
+<p class="exercise_text">
+    Написать код приложения, интерфейс которого состоит из двух input и кнопки. В input можно ввести любое число.<br>
+    Заголовок первого input — «номер страницы».<br>
+    Заголовок второго input — «лимит».<br>
+    Заголовок кнопки — «запрос».<br>
+    При клике на кнопку происходит следующее:<br>
+</p>
+<ul>
+    <li class="exercise_text">
+        Если число в первом input не попадает в диапазон от 1 до 10 или не является числом — выводить ниже текст
+        «Номер страницы вне диапазона от 1 до 10»;
+    </li>
+    <li class="exercise_text">
+        Если число во втором input не попадает в диапазон от 1 до 10 или не является числом — выводить ниже текст
+        «Лимит вне диапазона от 1 до 10»;
+    </li>
+    <li class="exercise_text">
+        Если и первый, и второй input не в диапазонах или не являются числами — выводить ниже текст
+        «Номер страницы и лимит вне диапазона от 1 до 10»;
+    </li>
+
+    <li class="exercise_text">
+        Если числа попадают в диапазон от 1 до 10 — сделать запрос по URL
+        <a href="https://picsum.photos/v2/list?page=1&limit=10" target="_blank">
+            https://picsum.photos/v2/list?page=1&limit=10
+        </a>
+        , где GET-параметр page — это число из первого input, а GET-параметр limit — это введённое число второго input.
+    </li>
+</ul>
+<div class="example">
+    <p class="exercise_text">
+        Пример: если пользователь ввёл 5 и 7, то запрос будет вида
+        <a href="https://picsum.photos/v2/list?page=5&limit=7" target="_blank">
+            https://picsum.photos/v2/list?page=5&limit=7.
+        </a>
+    </p>
+</div>
+<p class="exercise_text">
+    После получения данных вывести список картинок на экран.<br>
+    Если пользователь перезагрузил страницу, то ему должны показываться картинки из последнего успешно выполненного
+    запроса (использовать localStorage).
+</p>
+<div class="wrap_ex">
+    <label for="input_p">Номер страницы</label>
+    <input id="input_p" class="input" placeholder="Введите число">
+    <label for="input_l">Лимит</label>
+    <input id="input_l" class="input" placeholder="Введите число">
+    <button id="button_ex5" class="button">Запрос</button>
+</div>
+<div id="result_exercise" class="result"></div>
+</body>
+</html>

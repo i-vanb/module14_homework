@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Модуль 14</title>
+    <script src="../ex4.js"></script>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="menu">
+    <a href="../index.html">Задание 1</a>
+    <a href="./exercise2.html">Задание 2</a>
+    <a href="./exercise3.html">Задание 3</a>
+    <a class="active" href="./exercise4.html">Задание 4</a>
+    <a href="./exercise5.html">Задание 5</a>
+</nav>
+
+<h4 class="title">Задание 4</h4>
+<p class="exercise_text">
+    Напишите код приложения, интерфейс которого представляет собой input и кнопку. В input можно ввести любое число.
+    При клике на кнопку происходит следующее:<br>
+<ul>
+    <li class="exercise_text">
+        Если оба числа не попадают в диапазон от 100 до 300 или введено не число — выводить ниже текст
+        «одно из чисел вне диапазона от 100 до 300»;
+    </li>
+    <li class="exercise_text">
+        Если числа попадают в диапазон от 100 до 300 — сделать запрос c помощью fetch по URL
+        <a href="https://picsum.photos/200/300" target="_blank">
+            https://picsum.photos/200/300
+        </a>
+        , где первое число — ширина картинки, второе — высота.
+    </li>
+</ul>
+</p>
+<div class="wrap_ex">
+    <label for="input_w">Ширина:</label>
+    <input id="input_w" class="input" placeholder="Введите число">
+    <label for="input_h">Высота:</label>
+    <input id="input_h" class="input" placeholder="Введите число">
+    <button id="button_ex4" class="button">Отправить</button>
+</div>
+<div id="result_exercise4" class="result"></div>
+</body>
+</html>

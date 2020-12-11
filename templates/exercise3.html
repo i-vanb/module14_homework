@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Модуль 14</title>
+    <script src="../ex3.js" defer></script>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="menu">
+    <a href="../index.html">Задание 1</a>
+    <a href="./exercise2.html">Задание 2</a>
+    <a class="active" href="./exercise3.html">Задание 3</a>
+    <a href="./exercise4.html">Задание 4</a>
+    <a href="./exercise5.html">Задание 5</a>
+</nav>
+
+    <h4 class="title">Задание 3</h4>
+    <p class="exercise_text">
+        Напишите код приложения, интерфейс которого представляет собой input и кнопку.
+        В input можно ввести любое число. При клике на кнопку происходит следующее:<br>
+        <ul>
+            <li class="exercise_text">
+                Если число не попадает в диапазон от 1 до 10 — выводить ниже текст «число вне диапазона от 1 до 10».
+            </li>
+            <li class="exercise_text">
+                Если число попадает в диапазон от 1 до 10 — сделать запрос c помощью XHR по URL
+                <a href="https://picsum.photos/v2/list?limit=10" target="_blank">
+                    https://picsum.photos/v2/list?limit=10
+                </a>
+                , где get-параметр limit — это введённое число.
+            </li>
+        </ul>
+    </p>
+
+    <div class="wrap_ex">
+        <input id="input_ex3" class="input" placeholder="Введите число">
+        <button id="button_ex3" class="button">Отправить</button>
+    </div>
+    <div id="result_exercise3" class="result"></div>
+
+</body>
+</html>
